@@ -1,0 +1,17 @@
+.page1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.herobar {
+    width: 75%;
+    height: 75%;
+    text-align: center;
+    border: 2px black solid;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, rgb(0, 101, 196), rgb(209, 87, 108), rgb(5, 74, 177));
+}
+
