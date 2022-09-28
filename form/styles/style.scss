@@ -1,0 +1,41 @@
+@mixin box {
+    border: 2px solid black;
+    padding: 20px 0 20px 0;
+    border-radius: 5px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.637);
+}
+@mixin button {
+     font-size: 20px;
+    color: black;
+    border-radius: 3px;0
+}
+.form {
+    @include box();
+    width: 500px;
+    height: 100px;
+}
+
+.button {
+    @include button();  
+    position: relative;
+    left: 75%;
+    top: 20%;
+}
+
+.button:hover {
+    color: blue;
+    cursor: pointer;
+}
+input {
+    height: 25px;  
+}
+
+.ctitle {
+    color: white;
+    position: relative;
+    left: 2.5%;
+    bottom: 35%;
+}
+
+

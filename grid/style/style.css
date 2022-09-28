@@ -1,0 +1,24 @@
+.row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  grid-auto-rows: auto;
+}
+
+.col {
+  background-color: var(--magenta);
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid black;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: var(--textsize);
+}
+/*# sourceMappingURL=style.css.map */

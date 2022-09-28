@@ -1,0 +1,21 @@
+@mixin text {
+    color: black;
+    text-align: center;
+}
+.content {
+    width: 25%;
+    height: 2vh;
+}
+.bar-text {
+    @include text()
+    border: 2px solid black;
+}
+.round {
+    border-radius: 100px;
+}
+.rounded-edge {
+    border-radius: 15px;
+}
+.titlebar {
+    margin-top: 15px;
+}

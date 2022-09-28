@@ -1,0 +1,42 @@
+.button {
+  border: 2px solid transparent;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0 0 inset;
+          box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0 0 inset;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 0;
+  outline: none;
+  padding: 8px .8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+  -webkit-box-shadow: 0 0 0 4px rgba(0, 149, 255, 0.15);
+          box-shadow: 0 0 0 4px rgba(0, 149, 255, 0.15);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: black;
+  background-color: grey;
+}
+
+.round {
+  border-radius: 100px;
+}
+
+.rounded-edge {
+  border-radius: 15px;
+}
+/*# sourceMappingURL=style.css.map */
