@@ -12,5 +12,16 @@
   text-align: center;
   border: 2px black solid;
   border-radius: 20px;
-  background-image: linear-gradient(to right, rgb(109, 181, 248), rgb(87, 181, 209), rgb(115, 164, 238));
+  background-image: linear-gradient(to right, rgb(103, 175, 241), rgb(76, 166, 240), rgb(79, 164, 212));
+}
+
+@media only screen and (max-width: 500px) {
+  .herobar {
+    background-color: red;
+    display: flex;
+    justify-content: left;
+  }
+  .title {
+    padding-left: 120px;
+  }
 }/*# sourceMappingURL=style.css.map */
