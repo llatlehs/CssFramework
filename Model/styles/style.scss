@@ -24,6 +24,11 @@
     box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
     box-shadow: none;
 }
+@mixin img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 .modal {
     display: none; 
@@ -70,6 +75,8 @@
   
 .modal-body {
     padding: 2px 16px;
+    width: 80%;
+
 }
   
 
@@ -92,14 +99,40 @@
     animation-duration: 0.4s
 }
 .mybtn {
-    @include btn()
+    @include btn();
     background-color: blue;
     color: white;
 }
 .btn {
     @include btn()
 }
-  
+
+img {
+    @include img();
+    width: 1500px;
+    height: 750px;
+}
+
+@media only screen and (max-width: 900px) {
+    img {
+        width: 650px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    img {
+        width: 525px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    img {
+        width: 400px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    img {
+        width: 350px;
+    }
+}
 
 @keyframes animatetop {
     from {top: -300px; opacity: 0}
