@@ -1,27 +1,55 @@
-.page1 {
+.container {
   width: 100%;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .herobar {
   width: 75%;
   height: 75%;
-  text-align: center;
-  border: 2px black solid;
   border-radius: 20px;
-  background-image: linear-gradient(to right, rgb(103, 175, 241), rgb(76, 166, 240), rgb(79, 164, 212));
+  text-align: center;
+  background-color: #bbdfe0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px;
 }
 
-@media only screen and (max-width: 500px) {
+.box {
+  width: 100%;
+  height: 100%;
+  background-image: url(../example.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 600px) {
   .herobar {
-    background-color: red;
-    display: flex;
-    justify-content: left;
+    width: 100%;
+    background-color: #fab9ba;
   }
-  .title {
-    padding-left: 120px;
+  .container {
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */

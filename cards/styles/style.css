@@ -1,22 +1,27 @@
 .body {
-  background-color: rgb(46, 45, 45);
+  background-color: #2e2d2d;
 }
 
 .card {
   width: 235px;
   height: 250px;
-  box-shadow: 0 4px 8px 0 rgb(46, 45, 45);
+  -webkit-box-shadow: 0 4px 8px 0 #2e2d2d;
+          box-shadow: 0 4px 8px 0 #2e2d2d;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
-  border: 20px solid rgb(46, 45, 45);
-  background-color: rgb(105, 104, 104);
+  border: 20px solid #2e2d2d;
+  background-color: #696868;
   font-size: 30px;
   text-align: center;
   margin: auto;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 white;
+  -webkit-box-shadow: 0 8px 16px 0 white;
+          box-shadow: 0 8px 16px 0 white;
 }
 
 .container {
@@ -37,15 +42,18 @@
     height: 250px;
   }
 }
+
 @media only screen and (max-width: 500px) {
   .round {
     width: 200px;
     height: 250px;
   }
 }
+
 @media only screen and (max-width: 500px) {
   .roundedge {
     width: 200px;
     height: 250px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */

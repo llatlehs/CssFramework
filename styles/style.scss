@@ -1,14 +1,20 @@
 
+
 @mixin centerali {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
 }
-@mixin herotron {
-    width: 100%;
-    height: 100%;
-    background-color: grey;
+@mixin hero {
+    width: 75%;
+    height: 75%;
+    border-radius: 20px;
+}
+@mixin img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 @mixin btn {
     border: 1px solid transparent;
@@ -36,36 +42,92 @@
     box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
     box-shadow: none;
 }
-
-
-.nav {
-    @include centerali()
+@mixin htext {
+    margin: 20px;
 }
+@mixin grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-auto-rows: auto;
+    grid-gap: 20px;
+    grid-template-rows: 135px 135px 135px
+}
+//mixin
+
+.part2 {
+    @include grid()
+}
+hr {
+    color: black;
+}
+
+//navbar style
 nav ul {
-    @include centerali()
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 nav li {
     list-style-type: none;
+    color: white;
     margin: 20px;
 }
+nav {
+    background-color: #0000;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+//navbar style
 
-.herotron {
-    @include herotron()
+//herobar style
+.container {
+    width: 100%;
+    height: 67vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../bg.jpg);
+    @include img()
+}
+
+.herobar {
+    width: 75%;
+    height: 450px;
 }
 .header {
-    margin: 20px;
+    color: white;
+    @include htext()
 }
 .subheader {
-    margin: 20px;
+    color: white;
+    @include htext()
 }
-.jtext {
-    margin: 20px;
+.htext {
+    color: white;
+    @include htext()
+}
+//herobar style
+.section1 {
+    background-image: url(../css.jpg);
+    width: 500px;
+    height: 500px;
+    @include img()
 }
 
-.part2 {
-    height: 100vh;
-    width: 100%;
-}
+
+
+
+
+
+//grid style
 .grid {
     display: grid;
     grid-template-columns: auto auto;
@@ -73,8 +135,18 @@ nav li {
     grid-gap: 20px;
     grid-template-rows: 135px 135px 135px 135px 135px 135px 135px;
 }
+//grid style
 
-
-
+//responsive design
+@media only screen and (max-width: 900px) {
+    .part2 {
+        display: block;
+        grid-template-columns: unset;
+        grid-auto-rows: unset;
+    }
+    .section1 {
+        width: 100%;
+    }
+}
 
 

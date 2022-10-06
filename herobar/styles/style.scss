@@ -1,4 +1,15 @@
-.page1 {
+@mixin hero {
+    width: 75%;
+    height: 75%;
+    border-radius: 20px;
+}
+@mixin img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -7,24 +18,34 @@
 }
 
 .herobar {
-    width: 75%;
-    height: 75%;
+    @include hero();
     text-align: center;
-    border: 2px black solid;
+    background-color: rgb(187, 223, 224);
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    background-image: url(../example.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     border-radius: 20px;
-    background-image: linear-gradient(to right, rgb(103, 175, 241), rgb(76, 166, 240), rgb(79, 164, 212));
 }
 
 
 
-@media only screen and (max-width: 500px) {
-    .herobar{
-        background-color: red;
-        display: flex;
-        justify-content: left;
+@media only screen and (max-width: 600px) {
+    .herobar {
+        width: 100%;
+        background-color: rgb(250, 185, 186);
     }
-    .title {
-        padding-left: 120px;
+    .container {
+        justify-content: unset;
+        align-items: unset;
     }
 }
 

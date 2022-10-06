@@ -1,20 +1,20 @@
-.nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+.part2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  grid-auto-rows: auto;
+  grid-gap: 20px;
+  -ms-grid-rows: 135px 135px 135px;
+      grid-template-rows: 135px 135px 135px;
+}
+
+hr {
+  color: black;
 }
 
 nav ul {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,30 +32,68 @@ nav ul {
 
 nav li {
   list-style-type: none;
+  color: white;
   margin: 20px;
 }
 
-.herotron {
+nav {
+  background-color: #0000;
+  position: fixed;
   width: 100%;
-  height: 100%;
-  background-color: grey;
+  z-index: 5;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.container {
+  width: 100%;
+  height: 67vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.herobar {
+  width: 75%;
+  height: 450px;
 }
 
 .header {
+  color: white;
   margin: 20px;
 }
 
 .subheader {
+  color: white;
   margin: 20px;
 }
 
-.jtext {
+.htext {
+  color: white;
   margin: 20px;
 }
 
-.part2 {
-  height: 100vh;
-  width: 100%;
+.section1 {
+  background-image: url(../css.jpg);
+  width: 500px;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .grid {
@@ -67,5 +105,17 @@ nav li {
   grid-gap: 20px;
   -ms-grid-rows: 135px 135px 135px 135px 135px 135px 135px;
       grid-template-rows: 135px 135px 135px 135px 135px 135px 135px;
+}
+
+@media only screen and (max-width: 900px) {
+  .part2 {
+    display: block;
+    -ms-grid-columns: unset;
+        grid-template-columns: unset;
+    grid-auto-rows: unset;
+  }
+  .section1 {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
