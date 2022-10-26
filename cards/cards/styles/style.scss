@@ -1,0 +1,86 @@
+.body {
+    background-color: rgb(46, 45, 45);
+}
+
+.card {
+    width: 235px;
+    height: 250px;
+    font-size: 30px;
+    background-color: rgb(105, 104, 104);
+    border: 20px solid rgb(46, 45, 45);
+    box-shadow: 0 4px 8px 0 rgb(46, 45, 45);
+    text-align: center;
+    align-items: center;
+    margin: auto;
+        
+    .image1{
+        background-image: url(images/keyboard.png);
+        background-color: red;
+        background-position: center;
+        background-size: cover;
+        height: 120px;
+        width: 100%;
+        
+        
+    }    
+    
+    .image2{
+        background-image: url(images/keyboard.png);
+        background-color: red;
+        background-position: center;
+        background-size: cover;
+        height: 120px;
+        width: 100%;
+        
+        
+    }    
+    
+    .image3{
+            background-image: url(images/keyboard.png);
+            background-color: red;
+            background-position: center;
+            background-size: cover;
+            height: 130px;
+            width: 100%;
+            border-radius: 20%;
+            
+            
+        }
+    .text{
+       height: 60%;
+       background-color: lavenderblush;
+    }
+
+
+}
+
+
+
+/* Border Radius for Cards */
+.round {
+
+    border-radius: 20%;
+ 
+    // background-image:url(images/computer.webp)
+
+}
+.roundedge {
+    border-radius: 25px;
+   
+    
+    // background-image: url(images/keyboard.webp);
+}
+/* /Border Radius for Cards */
+
+
+/* Responsive Design */
+@media only screen and (max-width: 950px) {
+    
+}
+
+@media only screen and (max-width: 650px) {
+    .card, .round, .roundedge {
+        width: 200px;
+        height: 250px;
+    }
+}
